@@ -1,10 +1,10 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { ImEye, ImEyeBlocked } from "react-icons/im";
+import { useNavigate } from "react-router-dom";
 import reqAddresses from "../../additional/API";
-import Button from "../Button/Button";
 import { useUserSignInMutation } from "../../redux/authAPI";
+import Button from "../Button/Button";
 
 const { REQUEST_ADDRESS } = reqAddresses;
 
@@ -23,8 +23,6 @@ const AuthForm = () => {
     password: "",
     confirm: "",
   };
-
-  const [credentials, setCredentials] = useState(data);
 
   async function handleSubmit(e) {
     try {
@@ -82,7 +80,7 @@ const AuthForm = () => {
 
   return (
     <div className={`relative`}>
-      <p className={`text-[40px] uppercase font-bold text-[54px]`}>
+      <p className={`uppercase font-bold text-[54px]`}>
         User registration
       </p>
       <form

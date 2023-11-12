@@ -9,18 +9,15 @@ const { GAMES_ADDRESS } = addresses;
 const GameInfoPage = () => {
   const [game, setGame] = useState([]);
   const [link, setLink] = useState("");
-  console.log(link);
 
   const params = useParams();
   const { id } = params;
   const {
     commonGameName,
     exactingness,
-    gameVideoUrl,
     publisher,
     releaseDate,
     gameDescription,
-    inTop,
     genre,
   } = game;
 
@@ -44,7 +41,7 @@ const GameInfoPage = () => {
       arr = [...arrPart, elToChange];
       setLink(arr.join("/"));
     }
-  }, []);
+  }, [game, id]);
 
   return (
     <div

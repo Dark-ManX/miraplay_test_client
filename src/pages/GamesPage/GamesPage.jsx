@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 import Radioblock from "../../components/RadioBlock/RadioBlock";
 import GamesList from "../../components/GamesList";
 
-const { REQUEST_ADDRESS, GAMES_ADDRESS } = API;
+const { GAMES_ADDRESS } = API;
 
 const GamesPage = () => {
   const [games, setGames] = useState([]);
