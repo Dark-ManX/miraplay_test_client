@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/miraplay_test_client/static/css/main.95c86cf5.css",
-    "main.js": "/miraplay_test_client/static/js/main.b3fa6daa.js",
-    "static/js/974.e9a2ec00.chunk.js": "/miraplay_test_client/static/js/974.e9a2ec00.chunk.js",
-    "static/js/753.df37404a.chunk.js": "/miraplay_test_client/static/js/753.df37404a.chunk.js",
+    "main.css": "/miraplay_test_client/static/css/main.a8526d4a.css",
+    "main.js": "/miraplay_test_client/static/js/main.53694552.js",
+    "static/js/974.9e22f003.chunk.js": "/miraplay_test_client/static/js/974.9e22f003.chunk.js",
+    "static/js/753.138a3eea.chunk.js": "/miraplay_test_client/static/js/753.138a3eea.chunk.js",
     "static/media/PPNeueMachina-InktrapUltrabold.otf": "/miraplay_test_client/static/media/PPNeueMachina-InktrapUltrabold.fb684ef5ee9ec89f251b.otf",
     "static/media/PPNeueMachina-InktrapRegular.otf": "/miraplay_test_client/static/media/PPNeueMachina-InktrapRegular.01baa3a95952a01856a3.otf",
     "static/media/warrior.png": "/miraplay_test_client/static/media/warrior.d6ee9b86ac432f91a5e2.d6ee9b86ac432f91a5e2.png",
     "index.html": "/miraplay_test_client/index.html",
-    "main.95c86cf5.css.map": "/miraplay_test_client/static/css/main.95c86cf5.css.map",
-    "main.b3fa6daa.js.map": "/miraplay_test_client/static/js/main.b3fa6daa.js.map",
-    "974.e9a2ec00.chunk.js.map": "/miraplay_test_client/static/js/974.e9a2ec00.chunk.js.map",
-    "753.df37404a.chunk.js.map": "/miraplay_test_client/static/js/753.df37404a.chunk.js.map"
+    "main.a8526d4a.css.map": "/miraplay_test_client/static/css/main.a8526d4a.css.map",
+    "main.53694552.js.map": "/miraplay_test_client/static/js/main.53694552.js.map",
+    "974.9e22f003.chunk.js.map": "/miraplay_test_client/static/js/974.9e22f003.chunk.js.map",
+    "753.138a3eea.chunk.js.map": "/miraplay_test_client/static/js/753.138a3eea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95c86cf5.css",
-    "static/js/main.b3fa6daa.js"
+    "static/css/main.a8526d4a.css",
+    "static/js/main.53694552.js"
   ]
 }
