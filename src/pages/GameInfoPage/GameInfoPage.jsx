@@ -41,7 +41,7 @@ const GameInfoPage = () => {
       arr = [...arrPart, elToChange];
       setLink(arr.join("/"));
     }
-  }, [game, id]);
+  }, []);
 
   return (
     <div
