@@ -20,7 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: url("./imgs/cursor.png"), auto;
-  background-color: #030303;
+  background-color: #000000;
 }
 
 code {
