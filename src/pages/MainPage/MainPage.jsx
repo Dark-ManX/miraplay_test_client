@@ -4,7 +4,7 @@ import cursor from "../../imgs/cursor.png";
 
 const AuthPage = () => {
   return (
-    <div className={` text-white py-[20px] px-[50px] bg-black`}>
+    <div className={` text-white py-[20px] px-[50px] bg-inherit`}>
       <Suspense>
         <Outlet />
       </Suspense>
