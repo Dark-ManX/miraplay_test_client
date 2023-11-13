@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import API from "../../additional";
 import Button from "../../components/Button";
 import Radioblock from "../../components/RadioBlock/RadioBlock";
@@ -12,6 +13,8 @@ const GamesPage = () => {
   const [part, setPart] = useState([]);
   const [count, setCount] = useState(1);
   const [filter, setFilter] = useState("");
+
+  const user = useSelector((state) => state.auth);
 
   function handleClick() {
     setCount(count + 1);
@@ -59,23 +62,28 @@ const GamesPage = () => {
 
   return (
     <>
-      {}
-      <div>
+      {user.token ? (
+        <div>
+          <p className={`text-[48px] font-[NeueMachineBold] uppercase`}>
+            All games
+          </p>
+
+          <Radioblock handleClick={clickHandler} />
+
+          {games && <GamesList arr={part} />}
+          {games && (
+            <Button
+              text="Load more"
+              className={`block mt-[50px] mx-[auto] bg-[rgba(63,156,20,.5)] border-[1px] border-[#3f9c14] rounded-[10px] px-[10px] uppercase  hover:bg-[#3f9c14] h-[50px]`}
+              onClick={handleClick}
+            />
+          )}
+        </div>
+      ) : (
         <p className={`text-[48px] font-[NeueMachineBold] uppercase`}>
-          All games
+          Please authorise
         </p>
-
-        <Radioblock handleClick={clickHandler} />
-
-        {games && <GamesList arr={part} />}
-        {games && (
-          <Button
-            text="Load more"
-            className={`block mt-[50px] mx-[auto] bg-[rgba(63,156,20,.5)] border-[1px] border-[#3f9c14] rounded-[10px] px-[10px] uppercase  hover:bg-[#3f9c14] h-[50px]`}
-            onClick={handleClick}
-          />
-        )}
-      </div>
+      )}
     </>
   );
 };

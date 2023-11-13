@@ -1,22 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { authAPI } from "./authAPI";
 
-export const userSlice = createSlice({
-  name: "user",
-  initialState: { email: null, token: null },
+export const auth = createSlice({
+  name: "auth",
+  initialState: { token: null },
   reducers: {},
 
   extraReducers: (builder) => {
     builder.addMatcher(
       authAPI.endpoints.userSignIn.matchFulfilled,
-      (state, { payload: { user, token } }) => {
-        state.user = user;
-        state.token = token;
+      (state, { payload: { payload } }) => {
+        state.token = payload;
       }
     );
   },
 });
 
-export const { signInUser } = userSlice.actions;
+export const { signInUser } = auth.actions;
 
-export default userSlice.reducer;
+export default auth.reducer;

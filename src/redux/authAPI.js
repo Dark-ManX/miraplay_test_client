@@ -9,11 +9,14 @@ export const authAPI = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: `${REQUEST_ADDRESS}` }),
   endpoints: (builder) => ({
     userSignIn: builder.mutation({
-      query: (payload) => ({
-        url: "/users/signIn",
-        method: "POST",
-        body: payload,
-      }),
+      query: (payload) => {
+        console.log("in reducer", payload);
+        return {
+          url: "/users/signIn",
+          method: "POST",
+          body: payload,
+        };
+      },
     }),
   }),
 });

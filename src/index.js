@@ -4,16 +4,19 @@ import "./fonts/PPNeueMachina-InktrapRegular.otf";
 import "./index.css";
 import App from "./components/App";
 import { BrowserRouter } from "react-router-dom";
-import { store } from "./redux/store";
+import { persistor, store } from "./redux/store";
 import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <BrowserRouter basename="/miraplay_test_client">
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <PersistGate loading={null} persistor={persistor}>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </PersistGate>
     </BrowserRouter>
   </Provider>
 );
