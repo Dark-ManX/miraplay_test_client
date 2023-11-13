@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/miraplay_test_client/static/css/main.d7793a6f.css",
-    "main.js": "/miraplay_test_client/static/js/main.68cd6195.js",
-    "static/js/974.9e22f003.chunk.js": "/miraplay_test_client/static/js/974.9e22f003.chunk.js",
+    "main.css": "/miraplay_test_client/static/css/main.fcefdc24.css",
+    "main.js": "/miraplay_test_client/static/js/main.81c0fbb6.js",
+    "static/js/974.65014df1.chunk.js": "/miraplay_test_client/static/js/974.65014df1.chunk.js",
     "static/js/753.41895d33.chunk.js": "/miraplay_test_client/static/js/753.41895d33.chunk.js",
     "static/media/PPNeueMachina-InktrapUltrabold.otf": "/miraplay_test_client/static/media/PPNeueMachina-InktrapUltrabold.fb684ef5ee9ec89f251b.otf",
     "static/media/PPNeueMachina-InktrapRegular.otf": "/miraplay_test_client/static/media/PPNeueMachina-InktrapRegular.01baa3a95952a01856a3.otf",
     "static/media/warrior.png": "/miraplay_test_client/static/media/warrior.d6ee9b86ac432f91a5e2.d6ee9b86ac432f91a5e2.png",
     "index.html": "/miraplay_test_client/index.html",
-    "main.d7793a6f.css.map": "/miraplay_test_client/static/css/main.d7793a6f.css.map",
-    "main.68cd6195.js.map": "/miraplay_test_client/static/js/main.68cd6195.js.map",
-    "974.9e22f003.chunk.js.map": "/miraplay_test_client/static/js/974.9e22f003.chunk.js.map",
+    "main.fcefdc24.css.map": "/miraplay_test_client/static/css/main.fcefdc24.css.map",
+    "main.81c0fbb6.js.map": "/miraplay_test_client/static/js/main.81c0fbb6.js.map",
+    "974.65014df1.chunk.js.map": "/miraplay_test_client/static/js/974.65014df1.chunk.js.map",
     "753.41895d33.chunk.js.map": "/miraplay_test_client/static/js/753.41895d33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7793a6f.css",
-    "static/js/main.68cd6195.js"
+    "static/css/main.fcefdc24.css",
+    "static/js/main.81c0fbb6.js"
   ]
 }
